@@ -1,0 +1,22 @@
+{
+    "name": "Zynetra Roleplay",
+    "language": "Indonesia",
+    "mode": "Roleplay",
+    "website": "https://github.com/USERNAME/zynetra-rp",
+    "bind": "0.0.0.0",
+    "port": 7777,
+    "max_players": 100,
+    "password": "",
+    "announce": true,
+    "main_scripts": [
+        "zynetra-rp 1"
+    ],
+    "side_scripts": [
+        "mapping",
+        "speedometer"
+    ],
+    "rcon": {
+        "enable": true,
+        "password": "GANTI_RCON_PASSWORD"
+    }
+}

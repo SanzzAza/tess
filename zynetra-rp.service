@@ -1,0 +1,13 @@
+[Unit]
+Description=Zynetra Roleplay open.mp Server
+After=network.target mariadb.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/zynetra-rp
+ExecStart=/opt/zynetra-rp/omp-server
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

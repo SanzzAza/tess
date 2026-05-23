@@ -1,0 +1,1 @@
+Mapping starter ada di gamemode dan filterscript mapping.pwn
