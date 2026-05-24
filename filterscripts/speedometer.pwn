@@ -11,7 +11,7 @@ public OnFilterScriptInit()
 public OnPlayerConnect(playerid)
 {
     SpeedoText[playerid] = TextDrawCreate(520.0, 390.0, "Speed: 0 KMH");
-    TextDrawFont(SpeedoText[playerid], 2);
+    TextDrawFont(SpeedoText[playerid], TEXT_DRAW_FONT_2);
     TextDrawLetterSize(SpeedoText[playerid], 0.25, 1.2);
     TextDrawSetOutline(SpeedoText[playerid], 1);
     return 1;
