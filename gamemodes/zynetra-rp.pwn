@@ -74,7 +74,7 @@ enum E_HOUSE
     Float:hZ,
     hPrice,
     hOwnerID,
-    hLabel
+    Text3D:hLabel
 }
 new HouseData[50][E_HOUSE];
 new TotalHouses;
@@ -172,7 +172,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     if (dialogid == DIALOG_LOGIN)
     {
         if (!response) return Kick(playerid);
-        if (isnull(inputtext)) return ShowLogin(playerid);
+        if (!strlen(inputtext)) return ShowLogin(playerid);
 
         new query[256];
         mysql_format(g_SQL, query, sizeof query,
